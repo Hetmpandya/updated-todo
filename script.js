@@ -7,7 +7,11 @@ const icon = document.getElementById("icon");
 
 
 function addTask(){
-    if(inputBox.value === ""){
+
+    let task = inputBox.value.trim();
+    task = task.replace(/\s+/g, " ");
+
+    if(task === ""){
         alert("You Must Write Something");
     }
     else{
