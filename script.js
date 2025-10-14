@@ -2,6 +2,8 @@ const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const totalTask = document.getElementById("total-task");
 const completedTask = document.getElementById("completed-task");
+const themeBtn = document.getElementById("theme-btn");
+const icon = document.getElementById("icon");
 
 
 function addTask(){
@@ -86,6 +88,14 @@ loadData();
 
 function toggleTheme(){
     document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else{
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
 }
 
 

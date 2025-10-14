@@ -6,18 +6,43 @@
 }
 
 /* //////////////////////////////// */
-
-
-body.dark .container  {
-    background-color: #121212; /* ya koi dark color */
+body.dark .container {
+    background: #0b143a;
 }
+
+body.dark .todo-app  {
+    background-color: #261258;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+body.dark .theme button{
+    background-color: #cacaca;
+    color: rgb(6, 5, 5);
+}
+
+body.dark .todo-app h2 {
+    color: #fff;
+}
+
+body.dark .count p{
+    color: #fff;
+}
+
+body.dark li{
+    color: white;
+}
+
+body.dark ul li span:hover{
+    background: #504765;
+}
+
 
 /* /////////////////////////////////// */
 
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(135deg, #a4c2ff, #d65bf5);
     padding: 10px;
 }
 
@@ -28,6 +53,7 @@ body.dark .container  {
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0, 0, 0);
 }
 
 .theme{
@@ -160,11 +186,6 @@ li.checked div{
 }
 
 @media (max-width: 500px) {
-    
-    /* .row{
-        display: flex;
-        align-items: center;
-    } */
 
     .row button{
         padding: 9px 23px;
