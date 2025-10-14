@@ -159,19 +159,15 @@ li.checked div{
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     
-    .row input{
-        width: 20px;
-        display: inline;
-    }
+    /* .row{
+        display: flex;
+        align-items: center;
+    } */
 
     .row button{
-        width: 10px;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-        margin-left: 20px;
-
+        padding: 9px 23px;
     }
 
 }
