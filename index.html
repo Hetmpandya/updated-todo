@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <div class="theme"><button onclick="toggleTheme()"><i class="fa-regular fa-moon"></i></button></div>
+            <h2>TO-DO List <img src="images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="count">
+                <p>Total Tasks : <span id="total-task">0</span></p>
+                <p>Completed Tasks : <span id="completed-task">0</span></p>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="ex">
+                    <div class="icons">
+                        <span class="edit"><i class="fa-regular fa-pen-to-square"></i></span>
+                        <span class="delete"><i class="fa-regular fa-trash-can"></i></span>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
