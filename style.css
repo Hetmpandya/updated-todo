@@ -76,6 +76,7 @@ input{
     outline: none;
     background: transparent;
     padding: 10px;
+    color: black;
 }
 
 button{
@@ -156,4 +157,21 @@ ul li span:hover{
 
 li.checked div{
     display: none;
+}
+
+@media (max-width: 600px) {
+    
+    .row input{
+        width: 20px;
+        display: inline;
+    }
+
+    .row button{
+        width: 10px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-left: 20px;
+
+    }
+
 }
