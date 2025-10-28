@@ -52,22 +52,22 @@ function addTask(){
 // }, false);
 
 listContainer.addEventListener("click", function(e){
-    const li = e.target.closest("li"); // jo li click hua
+    const li = e.target.closest("li"); 
     if(!li) return;
 
-    if(e.target.closest(".edit")){ // edit button
+    if(e.target.closest(".edit")){ 
         let newText = prompt("Enter new text", li.firstChild.textContent);
         if(newText) li.firstChild.textContent = newText;
     } 
-    else if(e.target.closest(".remove")){ // delete button
+    else if(e.target.closest(".remove")){ 
         li.remove();
     } 
-    else if(e.target.tagName === "LI"){ // checkbox toggle
+    else if(e.target.tagName === "LI"){ 
         li.classList.toggle("checked");
     }
 
     taskCount();
-    saveData(); // changes save kar do
+    saveData(); 
 });
 
 
